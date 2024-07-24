@@ -1,3 +1,5 @@
+import { LoginButton } from "@/components/auth/login-button";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -10,7 +12,14 @@ export default function Home() {
           <p className="text-white text-lg">
              A simple Authentication service 
           </p>
+          <div>
+          <LoginButton>
+            <Button variant="secondary" size="lg">
+              Sign in
+          </Button>
+          </LoginButton>
          </div>
+       </div>
          </main>
   );
 }
